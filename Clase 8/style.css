@@ -1,0 +1,36 @@
+/*Normalizacion*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: green;
+    height: 100vh; /*VH=viewport height, 100vh es la vista de toda nuestra pagina, 50vh es la mitad*/    
+    width: 100vw; /*VW=viewport width, miden los anchos de nuestra pagina*/
+    display: flex; /* Esta propiedad activa Flexbox*/
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    border: yellow solid 1px;
+    border-radius: 10px;
+}
+
+.hijo:nth-child(1){
+    background-color: #1aff00;
+}
+
+.hijo:nth-child(2){
+    background-color: red;
+}
+
+.hijo:nth-child(3){
+    background-color: blue;
+}
